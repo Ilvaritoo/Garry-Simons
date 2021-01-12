@@ -26,6 +26,14 @@ input[type=checkbox]{
     display: none;
     pointer-events: none;
 }
+input[type=checkbox]:checked + label .box{
+    stroke-dashoffset: 320;
+    transition: all 0.3s linear;
+}
+input[type=checkbox]:checked + label .check{
+    stroke-dashoffset: 0;
+    transition: all 0.3s linear;
+}
 
 label{
     cursor: pointer;
@@ -42,6 +50,17 @@ svg{
 }
 
 .box{
-    stroke-dasharray: 40;
-    stroke-dashoffset: 10;
+    stroke-dasharray: 320;
+    stroke-dashoffset: 00;
+    fill: white;
+}
+.check{
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70;
+    fill: none;
+}
+
+span{
+    padding-top: 5px;
+    margin-left: 10px;
 }
