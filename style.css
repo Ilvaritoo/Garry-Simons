@@ -26,11 +26,11 @@ input[type=checkbox]{
     display: none;
     pointer-events: none;
 }
-input[type=checkbox]:checked + label .box{
+input[type=checkbox] + label .box{
     stroke-dashoffset: 320;
     transition: all 0.3s linear;
 }
-input[type=checkbox]:checked + label .check{
+input[type=checkbox] + label .check{
     stroke-dashoffset: 0;
     transition: all 0.3s linear;
 }
@@ -65,11 +65,11 @@ span{
     margin-left: 10px;
 }
 
-.reverse .box{
+input[type=checkbox]:checked + label .box{
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 0.3s linear;
 }
-.reverse .check{
+input[type=checkbox]:checked + label .check{
     stroke-dashoffset: 70;
     transition: stroke-dashoffset 0.3s linear;
 }
