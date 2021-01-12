@@ -64,3 +64,12 @@ span{
     padding-top: 5px;
     margin-left: 10px;
 }
+
+.reverse .box{
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.3s linear;
+}
+.reverse .check{
+    stroke-dashoffset: 70;
+    transition: stroke-dashoffset 0.3s linear;
+}
